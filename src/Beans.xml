@@ -5,10 +5,45 @@
 	xsi:schemaLocation = "http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     
-    <bean id = "textEditor" class = "com.tutorial.TextEditor">
-    	<property name = "spellChecker">
-    		<bean id = "spellChecker" class = "com.tutorial.SpellChecker"/>
+    <bean id = "javaCollection" class = "com.tutorial.JavaCollection">
+    
+    	<property name = "addressList">
+    		<list>
+    			<value>Bulgaria</value>
+    			<value>Deutschland</value>
+    			<value>USA</value>
+    			<value>Italy</value>
+    		</list>
     	</property>
+    	
+    	<property name = "addressSet">
+    		<set>
+    			<value>Bulgaria</value>
+    			<value>Deutschland</value>
+    			<value>USA</value>
+    			<value>Italy</value>
+    		</set>
+    	</property>
+    	
+    	<property name = "addressMap">
+    		<map>
+    			<entry key = "1" value = "Bulgaria"/>
+    			<entry key = "2" value = "Deutschland"/>
+    			<entry key = "3" value = "USA"/>
+    			<entry key = "4" value = "Italy"/>
+    		</map>
+    	</property>
+    	
+    	<property name = "addressProperties">
+    		<props>
+    			<prop key="one">Bulgaria</prop>
+    			<prop key="two">Deutschland</prop>
+    			<prop key="two">Deutschland</prop>
+    			<prop key="three">USA</prop>
+    			<prop key="four">Italy</prop>
+    		</props>
+    	</property> 
+    	
     </bean>
     
    <!-- <bean class = "com.tutorial.InitHelloWorld" /> -->
