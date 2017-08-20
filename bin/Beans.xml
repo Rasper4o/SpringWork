@@ -5,14 +5,10 @@
 	xsi:schemaLocation = "http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     
-    <bean id = "helloWorld" class = "com.tutorial.HelloWorld">
-    	<property name = "message1" value = "Hello World!"/>
-    	<property name = "message2" value = "Hola Mundo!"/>
-    </bean>
-    
-    <bean id = "helloBulgaria" class = "com.tutorial.HelloBulgaria">
-    	<property name="message1" value = "Zdravei Bulgaria!"/>
-    	<property name="message3" value = "Hello Bulgaria!"/>
+    <bean id = "textEditor" class = "com.tutorial.TextEditor">
+    	<property name = "spellChecker">
+    		<bean id = "spellChecker" class = "com.tutorial.SpellChecker"/>
+    	</property>
     </bean>
     
    <!-- <bean class = "com.tutorial.InitHelloWorld" /> -->
