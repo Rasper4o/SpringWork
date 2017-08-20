@@ -2,16 +2,26 @@ package com.tutorial;
 
 public class HelloWorld {
 
-	private String message;
+	private String message1;
+	private String message2;
 	
-	public void setMessage(String message)
+	public void setMessage1(String message)
 	{
-		this.message=message;
+		message1=message;
 	}
 	
-	public void getMessage()
+	public void setMessage2(String message) {
+		message2 = message;
+	}
+
+	public void getMessage1()
 	{
-		System.out.println("Your message: "+message);
+		System.out.println("Message 1 is: "+message1);
+	}
+	
+	public void getMessage2() 
+	{
+		System.out.println("Message 2 is: "+message2);
 	}
 	
 	public void init()
